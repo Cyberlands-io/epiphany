@@ -1,2 +1,2 @@
-# epiphany
+# Epiphany
 Pre-DDoS assessment tool
