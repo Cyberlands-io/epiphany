@@ -1,0 +1,7 @@
+asyncio
+bs4
+tldextract
+aiohttp
+aiofiles
+aiocsv
+prettytable
