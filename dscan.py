@@ -183,6 +183,8 @@ class Crawler(File_Manager):
 
 if __name__ == '__main__':
 
+    if os.name == 'nt':
+        asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
     loop = asyncio.get_event_loop()
     try:
         # Get args
