@@ -1,14 +1,15 @@
 # Epiphany
 ## Description
-Epiphany - is a pre-engagement tool to perform assessment and basic analysis of the application, which would test from a DDoS perspective. 
-- In the first stage, the tool performs link crawling, discovers POST and GET requests. 
-- On the second stage: for each link, Epiphany performs a set of requests which count response time and detect pages that are most "heavy" and interesting for potential attackers. 
-- Also, Epiphany performs heuristic discovery for cached pages. 
+Epiphany - is a pre-engagement tool \ self-assessment to identify weak spots from a DDoS attacker perspective. 
+- In the first stage, the tool crawls pages, enumerates POST and GET requests. 
+- On the second stage: Epiphany records response time for each page and detect ones that are most vulnerable for potential DDoS attack. 
+- Also, Epiphany performs heuristic discovery whether pages are cached or not. 
 
-These functions allow a clear understanding of the attack surface to build high-quality test cases for the DDoS assessment and recommendations for remediation and control improvements.
+Epiphany allow a clear understanding of a DDoS attack surface to build high-quality test cases for the DDoS assessment and recommendations for remediation and control improvements.
 
 ## Disclamer
-> Epiphany should be used for authorized assessment and/or nonprofit educational purposes only. Any misuse of this software will not be the responsibility of the author or of any other collaborator. Use it at your own networks and/or with the network owner's permission.
+> Epiphany should be used for authorized DDoS security assessment and/or nonprofit educational purposes only. Any misuse of this software will not be the responsibility of the author or of any other collaborator. Use it at your own networks and/or with the network owner's permission.
+
 ## Installation
 ```pip3 install -r requirements.txt```
 
