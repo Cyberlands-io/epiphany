@@ -1,19 +1,17 @@
 # Epiphany
 Pre-DDoS assessment tool
 
-Install:
+## Installation
+```pip3 install -r requirements.txt```
 
-pip3 install -r requirements.txt
+## Usage 
+  ```python3 dscan.py <host> <path_to_payload_lib>```
 
-Run: 
-  python3 dscan.py <host> <path_to_payload_lib>
+**File parameters:**
+  * positional arguments:
+    * hosts       Destination Hosts
+    * payload     Path to payload
 
-File parameters:
-
-positional arguments:
-  hosts       Destination Hosts
-  payload     Path to payload
-
-optional arguments:
-  -h, --help  show this help message and exit
-  -oC         Output result to console
+  * optional arguments:
+    * -h, --help  show this help message and exit
+    * -oC         Output result to console
