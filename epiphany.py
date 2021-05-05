@@ -188,7 +188,7 @@ if __name__ == '__main__':
     loop = asyncio.get_event_loop()
     try:
         # Get args
-        parser = argparse.ArgumentParser(prog='ddos_scanner',
+        parser = argparse.ArgumentParser(prog='epiphany',
                                          usage='%(prog)s [options] hosts separated by spaces [payload]')
         parser.add_argument('hosts', nargs='*', help='Destination Hosts')
         parser.add_argument('payload', help='Path to payload')
