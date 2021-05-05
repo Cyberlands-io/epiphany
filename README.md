@@ -13,7 +13,7 @@ These functions allow a clear understanding of the attack surface to build high-
 ```pip3 install -r requirements.txt```
 
 ## Usage 
-  ```python3 dscan.py <host> <path_to_payload_lib>```
+  ```python3 epiphany.py <host> <path_to_payload_lib>```
 
 **File parameters:**
   * positional arguments:
