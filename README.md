@@ -11,7 +11,11 @@ Epiphany allow a clear understanding of a DDoS attack surface to build high-qual
 > Epiphany should be used for authorized DDoS security assessment and/or nonprofit educational purposes only. Any misuse of this software will not be the responsibility of the author or of any other collaborator. Use it at your own networks and/or with the network owner's permission.
 
 ## Installation
-```pip3 install -r requirements.txt```
+```
+git clone https://github.com/Cyberlands-io/epiphany.git
+cd epiphany
+pip3 install -r requirements.txt
+```
 
 ## Usage 
   ```python3 epiphany.py <host> <path_to_payload_lib>```
