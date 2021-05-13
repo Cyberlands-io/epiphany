@@ -1,6 +1,6 @@
 # Epiphany
 ## Description
-Epiphany - is a pre-engagement tool \ self-assessment to identify weak spots from a DDoS attacker perspective. 
+Epiphany - is a pre-engagement \ self-assessment tool to identify weak spots of a web property from a DDoS attacker perspective. 
 - In the first stage, the tool crawls pages, enumerates POST and GET requests. 
 - On the second stage: Epiphany records response time for each page and detect ones that are most vulnerable for potential DDoS attack. 
 - Also, Epiphany performs heuristic discovery whether pages are cached or not. 
