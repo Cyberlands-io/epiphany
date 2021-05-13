@@ -36,7 +36,7 @@ pip3 install -r requirements.txt
 - [ ] Adding optional output to JSON
 
 ## Authors
-- [Cyberlands.io](https://cyberlands.io)
+- [Cyberlands.io](https://www.cyberlands.io)
 - [@excellencenatural](https://github.com/excellencenatural)
 
 ## License
