@@ -33,7 +33,7 @@ class Crawler(File_Manager):
         self.host = target_host
         if urlparse(self.host).scheme not in self.schemes:
             self.host = 'https://' + self.host
-        super(Crawler, self).__init__(f'{tldextract.extract(self.host).domain}.csv', payload_path)
+        super(Crawler, self).__init__(f'reports/{tldextract.extract(self.host).domain}.csv', payload_path)
         self.timeout = aiohttp.ClientTimeout(total=None, sock_connect=40, sock_read=40)
 
     async def request(self, page, req_sema, client):
@@ -177,7 +177,7 @@ class Crawler(File_Manager):
         req_sema = asyncio.Semaphore(value=50)
         await self.write_to_file('w', row=self.table_header)
         self.payloads = await self.read_from_file(self.path_to_payloads)
-        async with aiohttp.ClientSession(raise_for_status=True) as client:
+        async with aiohttp.ClientSession(raise_for_status=True, trust_env=True) as client:
             await self.crawl([Page(self.host, 'get')], req_sema, client)
 
 
@@ -191,7 +191,9 @@ if __name__ == '__main__':
         parser = argparse.ArgumentParser(prog='epiphany',
                                          usage='%(prog)s [options] hosts separated by spaces [payload]')
         parser.add_argument('hosts', nargs='*', help='Destination Hosts')
-        parser.add_argument('payload', help='Path to payload')
+        parser.add_argument('payload',
+                            help='Path to the file with payload data for the POST requests',
+                            default='payloads')
         parser.add_argument('-oC', action='store_true', help='Output result to console')
         args = parser.parse_args()
 

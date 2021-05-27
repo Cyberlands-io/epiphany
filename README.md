@@ -24,7 +24,11 @@ Epiphany allow a clear understanding of a DDoS attack surface to build high-qual
   * optional arguments:
     * ```-h, --help``` - show this help message and exit
     * ```-oC``` - Output result to console
-    
+## Docker usage
+```
+docker build -t epiphany .
+docker run -v /tmp/:/app/reports/ epiphany google.com payloads
+```
 ## To do
 - [x] Analysis of POST and GET requests **For now it's works as default option**
 - [x] Adding output to XML **For now it's only one available output to file**
